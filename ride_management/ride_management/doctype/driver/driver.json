@@ -1,0 +1,112 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "autoincrement",
+ "creation": "2023-11-30 13:14:55.156862",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "first_name",
+  "last_name",
+  "full_name",
+  "dob",
+  "column_break_doyz",
+  "phone_number",
+  "license_number",
+  "profile_photo",
+  "show_image_preview",
+  "image_preview"
+ ],
+ "fields": [
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "First Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "dob",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "DOB"
+  },
+  {
+   "fieldname": "column_break_doyz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "license_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "License Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "profile_photo",
+   "fieldtype": "Attach Image",
+   "label": "Profile Photo"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "Phone Number"
+  },
+  {
+   "depends_on": "eval:doc.show_image_preview==true",
+   "fieldname": "image_preview",
+   "fieldtype": "Image",
+   "label": "Image Preview",
+   "options": "profile_photo"
+  },
+  {
+   "default": "0",
+   "fieldname": "show_image_preview",
+   "fieldtype": "Check",
+   "label": "Show Image Preview?"
+  }
+ ],
+ "image_field": "profile_photo",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-12-06 10:50:06.283667",
+ "modified_by": "Administrator",
+ "module": "Ride Management",
+ "name": "Driver",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "search_fields": "license_number,dob",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "full_name",
+ "track_changes": 1
+}

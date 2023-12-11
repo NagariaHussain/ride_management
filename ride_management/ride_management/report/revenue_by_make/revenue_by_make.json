@@ -1,0 +1,26 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2023-12-11 11:40:43.745827",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letterhead": null,
+ "modified": "2023-12-11 11:40:43.745827",
+ "modified_by": "Administrator",
+ "module": "Ride Management",
+ "name": "Revenue by Make",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Vehicle",
+ "report_name": "Revenue by Make",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ]
+}

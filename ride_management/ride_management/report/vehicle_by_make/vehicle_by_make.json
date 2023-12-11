@@ -1,0 +1,57 @@
+{
+ "add_total_row": 1,
+ "columns": [
+  {
+   "fieldname": "make",
+   "fieldtype": "Data",
+   "label": "Make",
+   "width": 600
+  },
+  {
+   "fieldname": "count",
+   "fieldtype": "Int",
+   "label": "Count Of Vehicles",
+   "width": 600
+  }
+ ],
+ "creation": "2023-12-11 11:17:37.639872",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [
+  {
+   "default": "SUV",
+   "fieldname": "vehicle_type",
+   "fieldtype": "Link",
+   "label": "Vehicle Type",
+   "mandatory": 1,
+   "options": "Vehicle Type",
+   "wildcard_filter": 0
+  },
+  {
+   "fieldname": "is_published",
+   "fieldtype": "Check",
+   "label": "Is Published",
+   "mandatory": 0,
+   "wildcard_filter": 0
+  }
+ ],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letterhead": null,
+ "modified": "2023-12-11 11:32:48.177297",
+ "modified_by": "Administrator",
+ "module": "Ride Management",
+ "name": "Vehicle By Make",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT make, COUNT(*) AS count\nFROM tabVehicle \nWHERE type LIKE %(vehicle_type)s OR name LIKE %(vehicle_type)s\nGROUP BY make",
+ "ref_doctype": "Vehicle",
+ "report_name": "Vehicle By Make",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ]
+}

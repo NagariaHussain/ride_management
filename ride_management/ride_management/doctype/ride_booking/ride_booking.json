@@ -1,0 +1,152 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:RO-{MM}-{YYYY}-{####}",
+ "creation": "2023-12-04 11:48:09.090945",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_8pry",
+  "amended_from",
+  "customer_name",
+  "booking_date",
+  "phone_number",
+  "pickup_location",
+  "column_break_cpmv",
+  "vehicle",
+  "driver",
+  "section_break_wkps",
+  "price_per_km",
+  "currency",
+  "column_break_pkoq",
+  "total_amount",
+  "section_break_iegw",
+  "items"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_8pry",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Ride Booking",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Customer Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "booking_date",
+   "fieldtype": "Date",
+   "label": "Booking Date"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "Phone Number"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "pickup_location",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Pickup Location",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_cpmv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "vehicle",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Vehicle",
+   "options": "Vehicle",
+   "reqd": 1
+  },
+  {
+   "fieldname": "driver",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Driver",
+   "options": "Driver",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_wkps",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Ride Booking Item"
+  },
+  {
+   "fieldname": "price_per_km",
+   "fieldtype": "Currency",
+   "label": "Price (Per KM)",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "column_break_pkoq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount",
+   "non_negative": 1,
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_iegw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Select",
+   "label": "Currency",
+   "options": "USD\nINR"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-12-04 13:13:54.793539",
+ "modified_by": "Administrator",
+ "module": "Ride Management",
+ "name": "Ride Booking",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

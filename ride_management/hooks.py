@@ -1,4 +1,4 @@
-app_name = "ride_management"
+# app_name = "ride_management"
 app_title = "Ride Management"
 app_publisher = "Hussain Nagaria"
 app_description = "A vehicle rental management app"
@@ -6,12 +6,17 @@ app_email = "hussain@frappe.io"
 app_license = "mit"
 # required_apps = []
 
+
+fixtures = [
+    "Vehicle Type"
+]
+
 # Includes in <head>
 # ------------------
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/ride_management/css/ride_management.css"
-# app_include_js = "/assets/ride_management/js/ride_management.js"
+# app_include_js = "/assets/ride_management/js/rm.js"
 
 # include js, css files in header of web template
 # web_include_css = "/assets/ride_management/css/ride_management.css"
@@ -46,7 +51,7 @@ app_license = "mit"
 
 # website user home page (by Role)
 # role_home_page = {
-#	"Role": "home_page"
+# 	"Administrator": "app"
 # }
 
 # Generators
@@ -130,26 +135,25 @@ app_license = "mit"
 #	}
 # }
 
+
+# doc_events = {
+#     "*": {
+#         "before_insert": "ride_management.custom.before_insert",
+#     }
+# }
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-#	"all": [
-#		"ride_management.tasks.all"
-#	],
-#	"daily": [
-#		"ride_management.tasks.daily"
-#	],
-#	"hourly": [
-#		"ride_management.tasks.hourly"
-#	],
-#	"weekly": [
-#		"ride_management.tasks.weekly"
-#	],
-#	"monthly": [
-#		"ride_management.tasks.monthly"
-#	],
-# }
+scheduler_events = {
+	"hourly": [
+		"ride_management.tasks.hourly"
+	],
+    "Cron": {
+        "0 20 * * 3": [
+            "my_method_that_runs_every_minute"
+        ]
+    }
+}
 
 # Testing
 # -------
@@ -160,9 +164,9 @@ app_license = "mit"
 # ------------------------------
 #
 # override_whitelisted_methods = {
-#	"frappe.desk.doctype.event.event.get_events": "ride_management.event.get_events"
+# 	"erpnext.pos.return_total": "ride_management.custom_pos.return_total",
 # }
-#
+
 # each overriding function accepts a `data` argument;
 # generated from the base implementation of the doctype dashboard,
 # along with any modifications made in other Frappe apps

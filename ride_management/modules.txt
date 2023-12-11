@@ -1,1 +1,2 @@
 Ride Management
+EMI Management

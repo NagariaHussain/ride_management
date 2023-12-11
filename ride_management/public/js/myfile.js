@@ -1,0 +1,1 @@
+alert("myfile.js loaded!")

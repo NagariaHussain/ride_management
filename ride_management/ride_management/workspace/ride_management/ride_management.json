@@ -1,0 +1,38 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"39S48OhS5r\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Ride Management</span>\",\"col\":12}},{\"id\":\"hhU7RbTdn_\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"All Vehicles\",\"col\":3}}]",
+ "creation": "2023-12-11 12:36:24.645302",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "idx": 0,
+ "indicator_color": "darkgrey",
+ "is_hidden": 0,
+ "label": "Ride Management",
+ "links": [],
+ "modified": "2023-12-11 12:37:56.075986",
+ "modified_by": "Administrator",
+ "module": "Ride Management",
+ "name": "Ride Management",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 1.0,
+ "shortcuts": [
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "format": "{}",
+   "label": "All Vehicles",
+   "link_to": "Vehicle",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Ride Management"
+}

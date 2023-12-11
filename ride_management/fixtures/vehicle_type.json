@@ -1,0 +1,30 @@
+[
+ {
+  "description": "It is a hatchback",
+  "docstatus": 0,
+  "doctype": "Vehicle Type",
+  "modified": "2023-12-06 13:42:02.828975",
+  "name": "Hatchback"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Vehicle Type",
+  "modified": "2023-12-06 13:42:11.195898",
+  "name": "SUV"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Vehicle Type",
+  "modified": "2023-12-06 13:42:20.639039",
+  "name": "Sedan"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Vehicle Type",
+  "modified": "2023-12-06 13:48:54.532791",
+  "name": "Sports Car"
+ }
+]

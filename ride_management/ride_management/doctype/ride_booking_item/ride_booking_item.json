@@ -1,0 +1,61 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-12-04 12:23:34.373334",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "source",
+  "distance_in_km",
+  "column_break_pnin",
+  "destination",
+  "amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "source",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Source",
+   "reqd": 1
+  },
+  {
+   "fieldname": "distance_in_km",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Distance (in KM)",
+   "precision": "2",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_pnin",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "destination",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Destination",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-12-04 12:33:26.383110",
+ "modified_by": "Administrator",
+ "module": "Ride Management",
+ "name": "Ride Booking Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

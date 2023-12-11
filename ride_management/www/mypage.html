@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portal Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Drivers</h1>
+        <h2>{{ my_secret_message }}</h2>
+    
+
+        <ol>
+            {% for driver in drivers %}
+                <li>{{ driver.last_name }}, {{ driver.first_name }}</li>
+            {% endfor %}
+        </ol>
+    </main>
+    <script src="/assets/ride_management/js/myfile.js"></script>
+</body>
+</html>
